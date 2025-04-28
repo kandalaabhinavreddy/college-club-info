@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Support - Club Issues</title>
+  <link rel="stylesheet" href="support.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Student Support - Club Related Issues</h1>
+      <p>We're here to help! Submit your issue or feedback below.</p>
+    </div>
+  </header>
+
+  <section class="support-form-section">
+    <div class="container">
+      <form action="support_submit.php" method="POST" class="support-form">
+        <div class="form-group">
+          <label for="student-name">Full Name:</label>
+          <input type="text" id="student-name" name="student_name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="student-email">Email:</label>
+          <input type="email" id="student-email" name="student_email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="club-name">Club Name (if applicable):</label>
+          <input type="text" id="club-name" name="club_name">
+        </div>
+
+        <div class="form-group">
+          <label for="issue">Describe Your Issue:</label>
+          <textarea id="issue" name="issue_description" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-btn">Submit Issue</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Keshav Memorial College of Engineering | Student Support</p>
+    </div>
+  </footer>
+</body>
+</html>

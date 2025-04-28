@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Clubs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="back.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+  
+    <header>
+        <div class="container">
+            <div class="logo-heading">
+                <img src="kmcelogo_whitelett.png" alt="College Logo" class="logo">
+                <h1>KESHAV MEMORIAL COLLEGE OF ENGINEERING</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#clubs">Clubs</a></li>
+                    <li><a href="timeline.html">Event</a></li>
+                    <li><a href="club_join.html">JoinClub</a></li>
+                    <li class="logout">
+                        <form action="login.html" method="POST">
+                          <button type="submit" class="logout-btn">Logout</button>
+                        </form>
+                      </li>
+                      
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="clubs" class="slider-section">
+        <div class="container">
+            <h2>Our Clubs</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <div class="club-card">
+                            <div class="club-image" style="background-image: url('clubs/tech.img.jpg')"></div>
+                            <div class="club-info">
+                                <h3>Technical Club</h3>
+                                <p>A club dedicated to technology enthusiasts who want to innovate and create new solutions.</p>
+                                <a href="clubs\tech.html">
+                                <button class="view-events-btn" data-club="tech">ABOUT CLUB</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="club-card">
+                            <div class="club-image" style="background-image: url('clubs/art.img.jpg')"></div>
+                            <div class="club-info">
+                                <h3>Arts club</h3>
+                                <p>Express your creativity through various art forms and showcase your talent.</p>
+                                <a href="clubs\arts.html">
+                                    <button class="view-events-btn" data-club="art">ABOUT CLUB</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="club-card">
+                            <div class="club-image" style="background-image: url('clubs/sports.img.jpg')"></div>
+                            <div class="club-info">
+                                <h3>Sports Club</h3>
+                                <p>Stay active and healthy by participating in various sports activities.</p>
+                                <a href="clubs\sports.html">
+                                   <button class="view-events-btn" data-club="debate">ABOUT CLUB</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="club-card">
+                            <div class="club-image" style="background-image: url('clubs/ttl.img.jpg')"></div>
+                            <div class="club-info">
+                                <h3>Photography Club</h3>
+                                <p> Photography Club captures moments, tells stories through the lens, and nurtures creative visual expression</p>
+                                <a href="clubs\ttl.html">
+                                    <button class="view-events-btn" data-club="sports">ABOUT CLUB</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="club-card">
+                            <div class="club-image" style="background-image: url('clubs/utsaha.img.jpg')"></div>
+                            <div class="club-info">
+                                <h3>Cultural club</h3>
+                                <p>The Cultural Club celebrates diversity by promoting music, dance, drama, and traditions through vibrant events and performances.</p>
+                                <a href="clubs\utsaha.html">
+                                    <button class="view-events-btn" data-club="music">ABOUT CLUB</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button id="prev-btn">&lt;</button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                    </div>
+                    <button id="next-btn">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>College Clubs</h3>
+                    <p>Join, Learn, Grow</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><p href="#clubs">Clubs</p></li>
+                        <li><p href="timeline.html">Events</p></li>
+                        <li><p href="register.html">Register</p></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@collegeclubs.edu</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 College St, City, State, ZIP</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bitblitz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

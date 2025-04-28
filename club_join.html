@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join a Club</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+        <source src="back.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <section class="register-section">
+    <div class="container">
+      <h2>Join a Club</h2>
+      <div class="registration-form">
+        <form id="club-joining-form" action="club_join.php" method="POST">
+          <div class="form-group">
+            <label for="club-select">Select Club:</label>
+            <select id="club-select" name="club" required>
+              <option value="" disabled selected>-- Select a Club --</option>
+              <option value="Technicalclub">Technical Club</option>
+              <option value="artclub">Art Club</option>
+              <option value="cultural club">Cultural Club</option>
+              <option value="Sportsclub">Sports Club</option>
+              <option value="photographyclub">Photography club Club</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student_id" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="why-join">Why do you want to join this club?</label>
+            <textarea id="why-join" name="why_join" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="submit-btn">Join Club</button>
+          </div>
+        </form>
+        <div id="registration-message"></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
